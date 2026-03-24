@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><title>Dark Mode Toggle</title>
+<style>
+  :root { --bg: #ffffff; --text: #000000; }
+  [data-theme="dark"] { --bg: #121212; --text: #ffffff; }
+  body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 2rem; transition: 0.3s; }
+</style>
+</head>
+<body>
+  <h1>UI Theme Controller</h1>
+  <button onclick="document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark'">Toggle Theme</button>
+  <p>Engineered by <a href="https://share-ask.com" target="_blank">Share-Ask.com</a></p>
+</body>
+</html>
